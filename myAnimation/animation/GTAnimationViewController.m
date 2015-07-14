@@ -1,16 +1,16 @@
 //
-//  ViewController.m
+//  GTAnimationViewController.m
 //  myAnimation
 //
-//  Created by liuqing on 15/6/7.
+//  Created by liuqing on 15/6/26.
 //  Copyright (c) 2015年 liuqing. All rights reserved.
 //
 
-#import "GTViewController.h"
+#import "GTAnimationViewController.h"
 #import "GTAnimationCAShapeLayer.h"
 #import "GTWaveView.h"
 
-@interface GTViewController ()
+@interface GTAnimationViewController ()
 
 // action button
 @property (nonatomic, strong) UIButton *actionButton;
@@ -37,9 +37,18 @@
 @end
 
 
-@implementation GTViewController
+@implementation GTAnimationViewController
 
-- (void)viewDidLoad {
++ (void)pushAnimationViewController:(UINavigationController *)na
+{
+    if (na) {
+        GTAnimationViewController *viewController = [[GTAnimationViewController alloc] init];
+        [na pushViewController:viewController animated:YES];
+    }
+}
+
+- (void)viewDidLoad
+{
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor colorWithRed:0.16 green:0.62 blue:0.94 alpha:1];
     self.index = 0;
@@ -120,7 +129,6 @@
     self.startAnimationLayerDown.lineCap = kCALineCapSquare;
     self.startAnimationLayerDown.lineJoin = kCALineJoinRound;
     [self.view.layer addSublayer:self.startAnimationLayerDown];
-    
 }
 
 // draw the end of animation line
@@ -145,10 +153,10 @@
 - (void)circleStartTimer
 {
     self.circleTimer = [NSTimer scheduledTimerWithTimeInterval:0.0045
-                                                      target:self
-                                                    selector:@selector(circlePoolTimer)
-                                                    userInfo:nil
-                                                     repeats:YES];
+                                                        target:self
+                                                      selector:@selector(circlePoolTimer)
+                                                      userInfo:nil
+                                                       repeats:YES];
 }
 
 // do things on circle timer
@@ -169,7 +177,7 @@
         } completion:^(BOOL finished) {
         }];
         // set start button restart
-       [self.actionButton setTitle:@"restart" forState:UIControlStateNormal];
+        [self.actionButton setTitle:@"restart" forState:UIControlStateNormal];
         self.actionButton.enabled = YES;
     }
 }
@@ -218,7 +226,7 @@
         self.statusType = kprogressStatusStop;
         self.progressView.elapsedTime = 0;
         [self.actionButton setTitle:@"start" forState:UIControlStateNormal];
-
+        
         self.endLineLayer.hidden = YES;
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
             [self drawStartLineAnimation:0 index2:0];

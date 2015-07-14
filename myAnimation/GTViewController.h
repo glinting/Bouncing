@@ -7,20 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "GTAnimationProgressView.h"
-
-typedef NS_ENUM(NSUInteger, progressStatusType) {
-    kprogressStatusStart,
-    kprogressStatusStop,  
-};
 
 @interface GTViewController : UIViewController
 
-@property (nonatomic, strong) GTAnimationProgressView *progressView;
-
-@property (nonatomic, strong) NSDate *startDate;
-@property (nonatomic, strong) NSDate *finishDate;
-@property (nonatomic, assign) NSTimeInterval progressTime;
 
 @end
 

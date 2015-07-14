@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		49AEE3851B3CE7BF007EAFBD /* GTAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49AEE3841B3CE7BF007EAFBD /* GTAnimationViewController.m */; };
 		49AFF7091B23ED2500F7ABE6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 49AFF7081B23ED2500F7ABE6 /* main.m */; };
 		49AFF70C1B23ED2500F7ABE6 /* GTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 49AFF70B1B23ED2500F7ABE6 /* GTAppDelegate.m */; };
 		49AFF70F1B23ED2500F7ABE6 /* GTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49AFF70E1B23ED2500F7ABE6 /* GTViewController.m */; };
@@ -30,6 +31,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		49AEE3831B3CE7BF007EAFBD /* GTAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTAnimationViewController.h; sourceTree = "<group>"; };
+		49AEE3841B3CE7BF007EAFBD /* GTAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTAnimationViewController.m; sourceTree = "<group>"; };
 		49AFF7031B23ED2500F7ABE6 /* myAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49AFF7071B23ED2500F7ABE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		49AFF7081B23ED2500F7ABE6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -138,6 +141,8 @@
 				49AFF7311B242E4F00F7ABE6 /* GTAnimationProgressView.m */,
 				49AFF7331B257E6E00F7ABE6 /* GTWaveView.h */,
 				49AFF7341B257E6E00F7ABE6 /* GTWaveView.m */,
+				49AEE3831B3CE7BF007EAFBD /* GTAnimationViewController.h */,
+				49AEE3841B3CE7BF007EAFBD /* GTAnimationViewController.m */,
 			);
 			path = animation;
 			sourceTree = "<group>";
@@ -243,6 +248,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				49AFF7321B242E4F00F7ABE6 /* GTAnimationProgressView.m in Sources */,
+				49AEE3851B3CE7BF007EAFBD /* GTAnimationViewController.m in Sources */,
 				49AFF72F1B241B4900F7ABE6 /* GTAnimationCAShapeLayer.m in Sources */,
 				49AFF70F1B23ED2500F7ABE6 /* GTViewController.m in Sources */,
 				49AFF70C1B23ED2500F7ABE6 /* GTAppDelegate.m in Sources */,

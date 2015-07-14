@@ -7,6 +7,7 @@
 //
 
 #import "GTAppDelegate.h"
+#import "GTViewController.h"
 
 @interface GTAppDelegate ()
 
@@ -17,6 +18,14 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    [self.window makeKeyAndVisible];
+    
+    GTViewController *GTVC = [[GTViewController alloc] init];
+    UINavigationController *naVC = [[UINavigationController alloc] initWithRootViewController:GTVC];
+    self.window.rootViewController = naVC;
+    
     return YES;
 }
 

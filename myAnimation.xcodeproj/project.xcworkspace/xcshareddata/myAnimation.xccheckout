@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>FC67AB11-6E59-4432-8D41-79917B7788B6</string>
+	<key>IDESourceControlProjectName</key>
+	<string>myAnimation</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>D66E7D00A408010B8247D2D2E09F129E0925B6AC</key>
+		<string>https://github.com/glinting/Bouncing.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>myAnimation.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>D66E7D00A408010B8247D2D2E09F129E0925B6AC</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/glinting/Bouncing.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>D66E7D00A408010B8247D2D2E09F129E0925B6AC</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>D66E7D00A408010B8247D2D2E09F129E0925B6AC</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Bouncing</string>
+		</dict>
+	</array>
+</dict>
+</plist>
